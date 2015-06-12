@@ -22,7 +22,7 @@ namespace Test
                     var v = Double.Parse(line.Split('=')[1]);
                     if (!rb.Remove(v))
                     {
-                        Debug.WriteLine("Failed to delete: " + v);
+                        Debug.WriteLine("delete returned false: " + v);
                     }
                 }
                 else
